@@ -1,0 +1,118 @@
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* .title-section {
+    Additional styling for the entire title section if needed
+  } */
+  
+  .title {
+    /* Specific styling for the title */
+    color: #333; /* Example: Dark grey for contrast */
+    font-size: 2.5em; /* Example: Larger font size */
+  }
+  
+  .subtitle {
+    /* Specific styling for the subtitle */
+    color: #666; /* Example: Lighter grey for less emphasis */
+    font-size: 1.25em; /* Example: Smaller than title */
+    font-style: italic; /* Example: Italic for stylistic choice */
+  }
+
+  lite-youtube {
+    display: block;
+    margin: 0 auto;
+    width: 100%;         /* Full width of parent */
+    max-width: 855px;    /* Optional: Limit max width */
+}
+
+
+.card {
+  border: 1px solid #e9ecef;
+  background-color: #ffffff;
+}
+
+.card .d-flex {
+  height: 180px;
+  background-color: #f8f9fa;
+}
+
+.material-icons {
+  font-size: 80px;
+  color: #000000;
+}
+
+.custom-btn {
+  color: #495057;
+  border-color: #ced4da;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+}
+
+.custom-btn:active, .custom-btn:focus {
+  color: #212529;
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #5877a0 !important;
+  border-color: #5877a0 !important;
+}
+
+.btn-outline-primary-custom {
+  color: #2d5c99;
+  border-color: #2d5c99;
+}
+
+.btn-outline-primary-custom:hover {
+  color: #fff;
+  background-color: #2d5c99;
+  border-color: #2d5c99;
+}
+
+.btn-outline-primary-custom:focus, .btn-outline-primary-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(45, 92, 153, 0.5);
+}
+
+.btn-outline-primary-custom:not(:disabled):not(.disabled):active, .btn-outline-primary-custom:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary-custom.dropdown-toggle {
+  color: #fff;
+  background-color: #2d5c99;
+  border-color: #2d5c99;
+}
+
+.btn-outline-primary-custom:not(:disabled):not(.disabled):active:focus, .btn-outline-primary-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(45, 92, 153, 0.5);
+}
+
+.title-section-2 .title .material-icons {
+  color: #FF0000; /* YouTube Play Button Red */
+  vertical-align: middle; /* Aligns icon with the text baseline */
+  font-size: 74px; /* Adjust size if necessary for perfect alignment */
+  margin-bottom: -2px; /* Fine-tune vertical alignment */
+  margin-left: 4px; /* Adds some space between text and icon */
+  margin-right: 4px; /* Adds some space after icon */
+}
+
+.title-section-2 .title {
+  display: inline-flex; /* Ensures inline elements can be centered vertically */
+  align-items: center; /* Centers items vertically */
+}
+
+.title-section-2 .subtitle {
+  margin-top: 0.5rem; /* Adds space between title and subtitle */
+}
+
+
+
