@@ -119,18 +119,17 @@
   margin-top: 0.5rem; /* Adds space between title and subtitle */
 }
 
-.icon-container {
-  /* Adjust container size if needed */
-  height: 200px; /* Example height */
+.svg-card-img {
+  /* SVG images scale naturally, but you can set max-width for responsiveness */
+  max-width: 30%;
+  height: auto; /* Maintain aspect ratio */
 }
 
-.card-icon-img {
-  /* Control size of the image */
-  width: 50px; /* Adjust as needed */
-  height: 150px; /* Adjust as needed */
-  /* SVG icons don't fill with color by default when using img tags; 
-  you might need to use filters or edit the SVG if color is critical */
-  filter: invert(95%) sepia(50%) saturate(500%) hue-rotate(360deg); /* Example color change using filters */
+/* If you want to set a specific size for all SVGs in cards */
+.svg-card-img-fixed {
+  width: 200px;  /* Example width */
+  height: 200px; /* Example height - make sure this matches your aspect ratio */
+  object-fit: contain; /* This will scale the image to fit within this box while maintaining aspect ratio */
 }
 
 
