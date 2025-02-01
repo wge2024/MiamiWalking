@@ -26,6 +26,12 @@
 
         gtag('config', 'G-N90RMFHVNE');
     </script>
+    <script>
+        if (window.location.protocol !== "https:" && window.location.hostname !== "localhost" && window.location.port !== "5500") {
+          window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+        </script>
+    
 
 </head>
 
