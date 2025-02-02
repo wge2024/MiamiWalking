@@ -7,8 +7,8 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta http-equiv="Feature-Policy" content="geolocation 'none'; microphone 'none'; camera 'none'">
-
     <meta http-equiv="Cache-Control" content="max-age=31536000">
+
     <title>Charity Walks - MiamiWalking.com - Miami</title>
     <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon Miami Walking PNG.png">
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -344,16 +344,19 @@
     <!-- <script async data-id="101472771" src="//static.getclicky.com/js"></script> -->
     <script>
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/sw.js').then(function (registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                }, function (err) {
-                    console.log('Service Worker registration failed:', err);
-                });
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
             });
+          });
         }
-    </script>
-
+      </script>
+    
+   
 </body>
 
 </html>
