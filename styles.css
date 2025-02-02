@@ -125,6 +125,12 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+.svg-card-img-2 {
+  /* SVG images scale naturally, but you can set max-width for responsiveness */
+  max-width: 20%;
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* If you want to set a specific size for all SVGs in cards */
 .svg-card-img-fixed {
   width: 200px;  /* Example width */
