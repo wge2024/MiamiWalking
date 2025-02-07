@@ -24,6 +24,7 @@
     color: #666; /* Example: Lighter grey for less emphasis */
     font-size: 1.25em; /* Example: Smaller than title */
     font-style: italic; /* Example: Italic for stylistic choice */
+    text-decoration: none;
   }
 
   lite-youtube {
