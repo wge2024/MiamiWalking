@@ -42,7 +42,7 @@
     <div class="container text-center">
       <h1 class="m-0">
         <a href="index.html" title="Home">
-          <img src="img/Miami-Walking-Logo-SVG.svg" class="logo" alt="Website Logo" >
+          <img src="img/Miami-Walking-Logo-SVG.svg" class="logo" alt="Website Logo">
         </a>
       </h1>
     </div>
@@ -90,27 +90,26 @@
       <!-- Main Section -->
 
       <div class="col-12 col-lg-8">
-        <div class="hero-image d-lg-block d-none mb-5">
-          <!-- Hero Image Banner -->
+        <!-- <div class="hero-image d-lg-block d-none mb-5">
           <img src="img/pexels-runffwpu-9857560.jpg" alt="Hero Image" class="img-fluid">
-        </div>
-        <div class="title-section text-center d-lg-block d-none mb-5">
+        </div> -->
+        <!-- <div class="title-section text-center d-lg-block d-none mb-5">
           <h1>Welcome to MiamiWalking.com </h1>
-        </div>
+        </div> -->
 
         <!-- Card Grid -->
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
               <div class="card">
-                <a href="charitywalks.html">
+                <a href="walking.html">
                   <div class="d-flex justify-content-center align-items-center">
                     <img src="img/person-walking-solid (1).svg" class="card-img-top svg-card-img-2"
                       alt="Description of image">
                   </div>
                 </a>
                 <div class="card-body text-center">
-                  <a href="charitywalks.html" class="btn btn-outline-light btn-primary">Charity Walks</a>
+                  <a href="walking.html" class="btn btn-outline-light btn-primary">Walking</a>
                 </div>
 
               </div>
@@ -196,11 +195,11 @@
   <script src="script.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').then(function (registration) {
           // Registration was successful
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
+        }, function (err) {
           // registration failed :(
           console.log('ServiceWorker registration failed: ', err);
         });
