@@ -1,0 +1,32 @@
+name: IndexNow Submission
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.html'
+
+jobs:
+  submit-to-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup IndexNow
+        run: |
+          echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
+
+      - name: Submit URLs to IndexNow
+  run: |
+    curl -X POST "https://www.bing.com/indexnow" \
+    -H "Content-Type: application/json" \
+    -d '{"host":"https://miamiwalking.com/","key":"${{ secrets.INDEXNOW_KEY }}","urlList":["/about.html","/contact.html"]}'
+      - name: Check IndexNow Submission Result
+        run: |
+          if [ $? -eq 0 ]; then
+            echo "IndexNow submission successful"
+          else
+            echo "IndexNow submission failed"
+          fi
