@@ -16,13 +16,14 @@ jobs:
 
       - name: Setup IndexNow
         run: |
-          echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
+          echo ${{ secrets.INDEXNOW_KEY }} > indexnow_key.txt
 
       - name: Submit URLs to IndexNow
-  run: |
-    curl -X POST "https://www.bing.com/indexnow" \
-    -H "Content-Type: application/json" \
-    -d '{"host":"https://miamiwalking.com/","key":"${{ secrets.INDEXNOW_KEY }}","urlList":["/about.html","/contact.html"]}'
+        run: |
+          curl -X POST "https://www.bing.com/indexnow" \
+          -H "Content-Type: application/json" \
+          -d '{"host":"https://miamiwalking.com/","key":"${{ secrets.INDEXNOW_KEY }}","urlList":["/about.html","/contact.html"]}'
+
       - name: Check IndexNow Submission Result
         run: |
           if [ $? -eq 0 ]; then
