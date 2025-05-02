@@ -151,10 +151,7 @@
   color: #555;
 }
 
-.weatherwidget-io {
-  width: 100%;
-  box-sizing: border-box;
-}
+
 
 .title {
   font-size: 24px; 
@@ -163,6 +160,10 @@
 .card.weatherwidget-io {
   padding: 10px;
   min-height: 100px; /* Ensure enough space for widget */
+ 
+    width: 100%;
+    min-height: 100px;
+  
 }
 
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://weatherwidget.io; style-src 'self' https://unpkg.com https://fonts.googleapis.com https://weatherwidget.io; img-src 'self' data: https://i.ytimg.com https://weatherwidget.io; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; font-src 'self' https://fonts.gstatic.com https://weatherwidget.io; connect-src 'self' https://forecast7.com https://weatherwidget.io;">
+      content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://weatherwidget.io 'sha256-E1m/XEkRhzVnC7/88/Yj+JzlmFcjsdQVWyugyI7xIxw='; style-src 'self' https://unpkg.com https://fonts.googleapis.com https://weatherwidget.io 'unsafe-inline'; img-src 'self' data: https://i.ytimg.com https://weatherwidget.io; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; font-src 'self' https://fonts.gstatic.com https://weatherwidget.io; connect-src 'self' https://forecast7.com https://weatherwidget.io;">
   <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -86,14 +86,18 @@
   <div class="row mt-5">
     <!-- Left Sidebar -->
     
-      <div class="col-lg-2 d-none d-lg-block">
-        <a class="card mb-3 weatherwidget-io" href="https://forecast7.com/en/25d76n80d19/miami/?unit=us"
-          data-label_1="MIAMI" data-label_2="WEATHER" data-days="3" data-theme="clear">MIAMI WEATHER</a>
-        <script>
-          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-        </script>
-      <!-- Keeps sidebar space occupied -->
+    <div class="col-lg-2 d-none d-lg-block">
+      <div class="card mb-3 pt-2">
+        <img src="img/William305 Neo Logo without Background.png" class="card-img-top"
+        alt="Event 1 Image - Description of the event" loading="lazy">
+        <div class="card-body text-center">
+          <a href="https://william305.com/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-sm btn-outline-primary-custom ">William305.com</a>
+        </div>
+      </div>
+
     </div>
+   
 
     <!-- Main Section -->
     <div class="col-12 col-lg-8">
@@ -104,21 +108,21 @@
       </div>
 
       <!-- YouTube Player Section (Full Width) -->
-      <div class="youtube-section mt-1 mb-5 card border-3" style="text-align: center;">
+      <div class="youtube-section mt-1 mb-5 card border-3" >
         <lite-youtube videoid="HVlM7ViLGQU" params="autoplay=0&modestbranding=1&rel=0"></lite-youtube>
         <p class="video-caption">
           Miami Beach Spring Break 2025
         </p>
       </div>
 
-      <div class="youtube-section mt-1 mb-5 card border-3" style="text-align: center;">
+      <div class="youtube-section mt-1 mb-5 card border-3" >
         <lite-youtube videoid="0rizie4awdA" params="autoplay=0&modestbranding=1&rel=0"></lite-youtube>
         <p class="video-caption">
           Miami Beach at Night
         </p>
       </div>
 
-      <div class="youtube-section mt-1 mb-5 card border-3" style="text-align: center;">
+      <div class="youtube-section mt-1 mb-5 card border-3" >
         <lite-youtube videoid="UsslRHXcsE8" params="autoplay=0&modestbranding=1&rel=0"></lite-youtube>
         <p class="video-caption">
           South Beach Broadwalk
@@ -160,7 +164,7 @@
    
       <div class="col-lg-2 d-none d-lg-block">
         <div class="card mb-3">
-          <img src="img/William305 Neo Logo without Background.png" class="card-img-top"
+          <img src="img/William305 Fork Logo.png" class="card-img-top"
           alt="Event 1 Image - Description of the event" loading="lazy">
           <div class="card-body text-center">
             <a href="https://william305.com/" target="_blank" rel="noopener noreferrer"
