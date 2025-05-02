@@ -45,15 +45,15 @@
   background-color: #f8f9fa;
 }
 
-.material-icons {
+/* .material-icons {
   font-size: 80px;
   color: #000000;
-}
+} */
 
-.material-icons-shoes {
+/* .material-icons-shoes {
   font-size: 65px;
   color: #000000;
-}
+} */
 
 .custom-btn {
   color: #495057;
@@ -110,7 +110,7 @@
 .title-section-2 .title .material-icons {
   color: #FF0000; /* YouTube Play Button Red */
   vertical-align: middle; /* Aligns icon with the text baseline */
-  font-size: 74px; /* Adjust size if necessary for perfect alignment */
+  font-size: 50px; /* Adjust size if necessary for perfect alignment */
   margin-bottom: -2px; /* Fine-tune vertical alignment */
   margin-left: 4px; /* Adds some space between text and icon */
   margin-right: 4px; /* Adds some space after icon */
@@ -144,11 +144,25 @@
   object-fit: contain; /* This will scale the image to fit within this box while maintaining aspect ratio */
 }
 
-
-
 .video-caption {
   text-align: center;
   margin-top: 20px;
   font-size: 1rem;
   color: #555;
 }
+
+.weatherwidget-io {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 24px; 
+}
+
+.card.weatherwidget-io {
+  padding: 10px;
+  min-height: 100px; /* Ensure enough space for widget */
+}
+
+
