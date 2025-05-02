@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
+        content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: https://i.ytimg.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; font-src 'self' https://fonts.gstatic.com;">
   <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -17,6 +17,8 @@
   <meta name="description" content="Home page of MiamiWalking.com">
   <link rel="canonical" href="https://miamiwalking.com/index.html">
   <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon Miami Walking PNG.png">
+  <link rel="stylesheet" href="https://unpkg.com/lite-youtube-embed/src/lite-yt-embed.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 
@@ -80,62 +82,70 @@
   </nav>
 
   <!-- Main Content Section with Sidebars -->
-  <div class="container">
-    <div class="row mt-5">
-      <!-- Left Sidebar -->
-      <div class="col-lg-2 d-none d-lg-block">
-        <!-- Keeps sidebar space occuppied -->
+<div class="container">
+  <div class="row mt-5">
+    <!-- Left Sidebar -->
+    <div class="col-lg-2 d-none d-lg-block">
+      <!-- Keeps sidebar space occupied -->
+    </div>
+
+    <!-- Main Section -->
+    <div class="col-12 col-lg-8">
+
+      <div class="title-section-2 text-center  mb-5 pt-0">
+        <h6 class="title">Press Videos <span class="material-icons">smart_display</span>Twice To Play</h6>
+        <!-- <p class="subtitle">*This method consumes less mobile data</p> -->
       </div>
 
-      <!-- Main Section -->
 
-      <div class="col-12 col-lg-8">
-        <!-- <div class="hero-image d-lg-block d-none mb-5">
-          <img src="img/pexels-runffwpu-9857560.jpg" alt="Hero Image" class="img-fluid">
-        </div> -->
-        <!-- <div class="title-section text-center d-lg-block d-none mb-5">
-          <h1>Welcome to MiamiWalking.com </h1>
-        </div> -->
 
-        <!-- Card Grid -->
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <a href="walking.html">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img src="img/person-walking-solid (1).svg" class="card-img-top svg-card-img-2"
-                      alt="Description of image">
-                  </div>
-                </a>
-                <div class="card-body text-center">
-                  <a href="walking.html" class="btn btn-outline-light btn-primary">Walking</a>
+      <!-- YouTube Player Section (Full Width) -->
+      <div class="youtube-section mt-1 mb-5 card border-3" style="text-align: center;">
+        <lite-youtube videoid="0rizie4awdA" params="autoplay=0&modestbranding=1&rel=0"></lite-youtube>
+        <p class="video-caption">
+          Miami Beach at Night
+        </p>
+      </div>
+
+      <!-- Card Grid -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <a href="walking.html">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="img/person-walking-solid (1).svg" class="card-img-top svg-card-img-2" alt="Person walking icon">
                 </div>
-
+              </a>
+              <div class="card-body text-center">
+                <a href="walking.html" class="btn btn-outline-light btn-primary">Walking</a>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
-              <div class="card">
-                <a href="shoes.html">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img src="img/Steps Icon Black.svg" class="card-img-top svg-card-img material-icons"
-                      alt="Description of image">
-                  </div>
-                </a>
-                <div class="card-body text-center">
-                  <a href="shoes.html" class="btn  btn-outline-light btn-primary">Shoes</a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <a href="shoes.html">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="img/Steps Icon Black.svg" class="card-img-top svg-card-img material-icons" alt="Steps icon">
                 </div>
+              </a>
+              <div class="card-body text-center">
+                <a href="shoes.html" class="btn btn-outline-light btn-primary">Shoes</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Right Sidebar -->
-      <div class="col-lg-2 d-none d-lg-block">
-        <!-- Keeps sidebar space occuppied -->
-      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="col-lg-2 d-none d-lg-block">
+      <!-- Keeps sidebar space occupied -->
     </div>
   </div>
+</div>
+
+  
   <footer class="bg-light text-dark mt-5 py-5">
     <div class="container">
       <div class="row">
@@ -192,6 +202,7 @@
 
   <!-- Bootstrap JS and Popper.js CDN -->
   <script src="bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.js" defer></script>
   <script src="script.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

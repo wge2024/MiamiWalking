@@ -146,3 +146,9 @@
 
 
 
+.video-caption {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
