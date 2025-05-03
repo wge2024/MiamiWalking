@@ -166,4 +166,8 @@
   
 }
 
+lite-youtube img { 
+  loading: lazy; 
+}
+
 
