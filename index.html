@@ -313,9 +313,22 @@
 
   <!-- Bootstrap JS and Popper.js CDN -->
   <script src="bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@latest/src/lite-yt-embed.js" defer></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.js" defer></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.js" defer></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.js" defer></script>
+  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('lite-youtube').forEach((element) => {
+      const img = element.shadowRoot.querySelector('img');
+      if (img) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
+  });
+</script>
+
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
